@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# 간단한 트위터 클론코딩으로 Firebase 사용법 익히기
+<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 💻 프로젝트 소개
+파이어베이스의 사용법을 익히고자 [노마드코더의 ‘트위터 클론코딩’ 강의](https://nomadcoders.co/nwitter)를 수강했습니다.<br>
+이 프로젝트는 강의를 수강하며 클론코딩을 진행한 것입니다.<br><br><br>
 
-Currently, two official plugins are available:
+## 📌 주요 기능 및 역할
+- Firebase Authentication을 통한 로그인(소셜 로그인 포함)
+- Firebase Storage와 Firestore DB를 이용한 트윗 추가/삭제, 이미지 업로드, 실시간 타임라인 관리
+- Firebase를 통한 호스팅<br><br><br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✍️ 강의를 들으면서 배운 점들
+[[프로젝트] 간단한 트위터 클론코딩으로 Firebase 사용법 익히기](https://quickchabun.tistory.com/87)<br><br>
 
-## Expanding the ESLint configuration
+제 블로그에 이번 클론코딩을 통하여 배운 점들을 정리했습니다. 참고 부탁드립니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
